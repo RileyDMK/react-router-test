@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Main />
+        <Header />
       </div>
     );
   }
@@ -19,7 +19,6 @@ const Header = () => (
     <nav>
       <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/roster'>Roster</Link></li>
         <li><Link to='/schedule'>Schedule</Link></li>
       </ul>
     </nav>
@@ -36,8 +35,12 @@ const Main = () => (
 )
 
 const Home = () => (
-  <div>
-    <h1>Welcome to the Tornadoes Website!</h1>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>I am John Doe</h1>
+      <p>And I'm a Photographer</p>
+      <button>Hire me</button>
+    </div>
   </div>
 )
 
