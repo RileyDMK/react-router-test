@@ -4,7 +4,7 @@
   background-image: url("images/hero-home-placeholder.jpg");
   /* Set a specific height */
   width: 100%;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 55px);
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;

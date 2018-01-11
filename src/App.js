@@ -19,7 +19,9 @@ const Header = () => (
     <nav>
       <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/schedule'>Schedule</Link></li>
+        <li><Link to='/insight'>Insight</Link></li>
+        <li><Link to='/integrity'>integrity</Link></li>
+        <li><Link to='/integration'>Integration</Link></li>
       </ul>
     </nav>
   </header>
@@ -29,7 +31,9 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>
-      <Route path='/schedule' component={Schedule}/>
+      <Route path='/insight' component={Insight}/>
+      <Route path='/integrity' component={Integrity}/>
+      <Route path='/integration' component={Integration}/>
     </Switch>
   </main>
 )
@@ -44,13 +48,20 @@ const Home = () => (
   </div>
 )
 
-const Schedule = () => (
+const Insight = () => (
   <div>
-    <ul>
-      <li>6/5 @ Evergreens</li>
-      <li>6/8 vs Kickers</li>
-      <li>6/14 @ United</li>
-    </ul>
+    <h1>Insight</h1>
+  </div>
+)
+const Integrity = () => (
+  <div>
+    <h1>Integrity</h1>
+  </div>
+)
+
+const Integration = () => (
+  <div>
+    <h1>Integration</h1>
   </div>
 )
 
