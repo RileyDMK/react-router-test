@@ -41,26 +41,26 @@ const Main = () => (
 const Home = () => (
   <div class="hero-image">
     <div class="hero-text">
-      <h1>I am John Doe</h1>
-      <p>And I'm a Photographer</p>
-      <button>Hire me</button>
+      <Insight />
+      <Integrity />
+      <Integration />
     </div>
   </div>
 )
 
 const Insight = () => (
-  <div>
+  <div id="insight" class="nav-item">
     <h1>Insight</h1>
   </div>
-)
+  )
 const Integrity = () => (
-  <div>
+  <div id="integrity" class="nav-item">
     <h1>Integrity</h1>
   </div>
 )
 
 const Integration = () => (
-  <div>
+  <div id="integration" class="nav-item">
     <h1>Integration</h1>
   </div>
 )
