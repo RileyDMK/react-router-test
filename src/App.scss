@@ -1,3 +1,11 @@
+%swiss-cheese{
+  -webkit-clip-path: circle(10%);
+  clip-path: circle(10%);
+  -webkit-transition: -webkit-clip-path 4s ease-out;
+  transition: -webkit-clip-path 4s ease-out; /* needs to be prefixed otherwise it's not transitioned in Chrome */
+  /* transition: clip-path .6s ease-out; */
+}
+
 /* The hero image */
 .hero-image {
     /* The image used */
@@ -11,6 +19,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    @extend %swiss-cheese;
+
+}
+
+.hero-image:active {
+  -webkit-clip-path: circle(100%);
+  clip-path: circle(100%);
 }
 
 /* Place text in the middle of the image */
