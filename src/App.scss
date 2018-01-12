@@ -1,6 +1,6 @@
 %swiss-cheese{
-  -webkit-transition: -webkit-clip-path 4s ease-out;
-  transition: -webkit-clip-path 4s ease-out; /* needs to be prefixed otherwise it's not transitioned in Chrome */
+  -webkit-transition: -webkit-clip-path 1s ease-out;
+  transition: -webkit-clip-path 1s ease-out; /* needs to be prefixed otherwise it's not transitioned in Chrome */
   /* transition: clip-path .6s ease-out; */
 }
 
@@ -17,11 +17,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 0;
 }
 
 .nav-item{
   /* The image used */
-  background-image: url("images/placeholder.jpg");
+
 
   /* Set a specific height */
   width:100%;
@@ -31,24 +32,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  z-index:2;
   @extend %swiss-cheese;
 }
 
 #insight{
+  background-image: url("images/placeholder.jpg");
   -webkit-clip-path: circle(10% at 30% 50%);
   clip-path: circle(10% at 20% 50%);
 }
 #integrity{
+  background-image: url("images/placeholder2.jpg");
   -webkit-clip-path: circle(10% at 60% 50%);
   clip-path: circle(10% at 50% 50%);
 }
 #integration{
+  background-image: url("images/placeholder3.jpg");
   -webkit-clip-path: circle(10% at 90% 50%);
   clip-path: circle(10% at 80% 50%);
 }
 #insight:hover, #integrity:hover, #integration:hover{
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
+  z-index:3;
 }
 
 /* Place text in the middle of the image */
