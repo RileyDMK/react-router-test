@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { Switch, Route, Link } from 'react-router-dom';
 
+// TODO: Refactor components into classes so that I can pass down state
+
 class App extends Component {
   render() {
     return (
