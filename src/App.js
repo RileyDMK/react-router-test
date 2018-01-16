@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        {/* <Header /> */}
         <Main />
       </div>
     );
@@ -65,10 +65,14 @@ const Integrity = () => (
   </div>
 )
 
-const Integration = () => (
-  <div id="integration" class="nav-item">
-    <h1>Integration</h1>
-  </div>
-)
+class Integration extends Component {
+  render(){
+    return (
+      <div id="integration" class="nav-item">
+        <h1>Integration</h1>
+      </div>
+    );
+  }
+}
 
 export default App;
