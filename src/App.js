@@ -51,6 +51,10 @@ const Home = () => (
 const Insight = () => (
   <div id="insight" class="nav-item">
     <h1>Insight</h1>
+    <div class="hero-text">
+      <Integrity />
+      <Integration />
+    </div>
   </div>
   )
 const Integrity = () => (
