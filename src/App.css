@@ -32,28 +32,48 @@
 
 #insight {
   background-image: url("images/placeholder.jpg");
-  -webkit-clip-path: circle(10% at 30% 50%);
-  clip-path: circle(10% at 20% 50%); }
+  -webkit-clip-path: circle(8% at 10% 25%);
+  clip-path: circle(8% at 10% 25%); }
 
 #integrity {
   background-image: url("images/placeholder2.jpg");
-  -webkit-clip-path: circle(10% at 60% 50%);
-  clip-path: circle(10% at 50% 50%); }
+  -webkit-clip-path: circle(8% at 10% 50%);
+  clip-path: circle(8% at 10% 50%); }
 
 #integration {
   background-image: url("images/Integration_3091.jpg");
-  -webkit-clip-path: circle(10% at 90% 50%);
-  clip-path: circle(10% at 80% 50%); }
+  -webkit-clip-path: circle(8% at 10% 75%);
+  clip-path: circle(8% at 10% 75%); }
 
 #insight:hover, #integrity:hover, #integration:hover {
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
   z-index: 3; }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  #integration {
+    background-image: url("images/Integration_1440.jpg"); } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-device-pixel-ratio: 3) {
+  #integration {
+    background-image: url("images/Integration_2880.jpg"); } }
+
 /* Place text in the middle of the image */
 .hero-text {
-  text-align: center;
+  text-align: left;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%; }
+
+.heading {
+  position: absolute; }
+
+.logo {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: calc(100vh);
+  z-index: 1; }

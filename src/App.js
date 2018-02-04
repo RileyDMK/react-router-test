@@ -42,17 +42,18 @@ const Main = () => (
 
 const Home = () => (
   <div class="hero-image">
-    <div class="hero-text">
+    <div class="main-page">
       <Insight />
       <Integrity />
       <Integration />
+      <h1 class="logo">Placeholder</h1>
     </div>
   </div>
 )
 
 const Insight = () => (
   <div id="insight" class="nav-item">
-    <h1>Insight</h1>
+    <h1 class="heading">Insight</h1>
     <div class="hero-text">
       <Integrity />
       <Integration />
