@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './images/pivotpointlogo.svg';
 import './App.css';
 import { Switch, Route, Link } from 'react-router-dom';
 
@@ -41,27 +41,27 @@ const Main = () => (
 )
 
 const Home = () => (
-  <div class="hero-image">
-    <div class="main-page">
+  <div className="hero-image">
+    <div className="main-page">
       <Insight />
       <Integrity />
       <Integration />
-      <h1 class="logo">Placeholder</h1>
+      <img src={require("./images/pivotpointlogo_1500.png")} alt="Pivot Point Logo" id="logo" />
     </div>
   </div>
 )
 
 const Insight = () => (
-  <div id="insight" class="nav-item">
-    <h1 class="heading">Insight</h1>
-    <div class="hero-text">
+  <div id="insight" className="nav-item">
+    <h1 className="heading">Insight</h1>
+    <div className="hero-text">
       <Integrity />
       <Integration />
     </div>
   </div>
-  )
+)
 const Integrity = () => (
-  <div id="integrity" class="nav-item">
+  <div id="integrity" className="nav-item">
     <h1>Integrity</h1>
   </div>
 )
@@ -69,7 +69,7 @@ const Integrity = () => (
 class Integration extends Component {
   render(){
     return (
-      <div id="integration" class="nav-item">
+      <div id="integration" className="nav-item">
         <h1>Integration</h1>
       </div>
     );
