@@ -7,7 +7,7 @@
 /* The hero image */
 .hero-image {
     /* The image used */
-    background-image: url("images/hero-home-placeholder.jpg");
+    background-image: url("images/maincups_5020_40.jpg");
 
     /* Set a specific height */
     width:100%;
@@ -17,10 +17,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    z-index: 0;
+    //z-index: 0;
 }
 
-.nav-item{
+.nav-hole{
   /* The image used */
   /* Set a specific height */
   width:100%;
@@ -35,24 +35,43 @@
 }
 
 #insight{
-  background-image: url("images/placeholder.jpg");
-  -webkit-clip-path: circle(8% at 10% 25%);
-  clip-path: circle(8% at 10% 25%);
+  background-image: url("images/hike_2880_20.jpg");
+  -webkit-clip-path: circle(7% at 10% 25%);
+  clip-path: circle(7% at 10% 25%);
+}
+#insight-heading{
+  color:white;
+  position:absolute;
+  top:22%;
+  left:6%;
 }
 #integrity{
-  background-image: url("images/placeholder2.jpg");
-  -webkit-clip-path: circle(8% at 10% 50%);
-  clip-path: circle(8% at 10% 50%);
+  background-image: url("images/levelingup_2880_20.jpg");
+  -webkit-clip-path: circle(7% at 10% 50%);
+  clip-path: circle(7% at 10% 50%);
+}
+#integrity-heading{
+  color:white;
+  position:absolute;
+  top:47%;
+  left:5%;
 }
 #integration{
   background-image: url("images/Integration_3091.jpg");
-  -webkit-clip-path: circle(8% at 10% 75%);
-  clip-path: circle(8% at 10% 75%);
+  -webkit-clip-path: circle(7% at 10% 75%);
+  clip-path: circle(7% at 10% 75%);
+}
+#integration-heading{
+  color:white;
+  position:absolute;
+  top:72%;
+  left:5%;
+  font-size:2em;
 }
 #insight:hover, #integrity:hover, #integration:hover{
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
-  z-index:3;
+  //z-index:1;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
@@ -84,8 +103,32 @@ only screen and (min-device-pixel-ratio: 3) {
   left: 50%;
   transform: translate(-50%, 50%);
   height:calc(40vh);
-  z-index: 1;
+  z-index: 0;
 }
 @media only screen and (min-width:900px){
   #logo {height:50vh}
+}
+//
+//
+//
+//
+//
+//
+//
+.navbar{
+  background-color: grey;
+}
+@media (min-width: 768px){
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
 }
