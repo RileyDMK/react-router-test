@@ -4,6 +4,18 @@
   /* needs to be prefixed otherwise it's not transitioned in Chrome */
   /* transition: clip-path .6s ease-out; */ }
 
+.copy {
+  position: absolute;
+  margin-left: 30%;
+  margin-right: 30%; }
+
+#about-logo {
+  position: relative;
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* The hero image */
 .hero-image {
   /* The image used */
@@ -15,7 +27,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  opacity: 0.8;
+  filter: grayscale(0.1);
+  z-index: -1; }
 
 .nav-hole {
   /* The image used */
@@ -91,14 +106,14 @@
   left: 50%;
   transform: translate(-50%, 50%);
   height: calc(40vh);
-  z-index: 0; }
+  z-index: 1; }
 
 @media only screen and (min-width: 900px) {
   #logo {
     height: 50vh; } }
 
 .navbar {
-  background-color: grey; }
+  background-color: #6600cc; }
 
 @media (min-width: 768px) {
   .navbar-nav {
