@@ -106,27 +106,28 @@ const Integration = () => (
 
 const AboutUs = () => (
   <div>
-    <div class="copy">
+    <div className="copy">
       <img src={require("./images/pivotpointlogo_1500.png")} alt="Pivot Point Logo" id="about-logo" />
-      <p>
-        <br/>
-        Partnerships, Capabilities and References
-        <br/><br/>
-        Our business is your business.
-        <br/>
-        PivotPoint was formed in 2001 with a simple, yet effective, philosophy:
-        relationships with clients are built over time on a foundation of trust.
-        By first focussing on what our clients need and when they need it, we
-        implement a very tailored, fast moving, and, we think, enjoyable approach.
-        The majority of our clients have worked with us, as they have evolved,
-        for an average of five years or longer.
-        <br/>
-        From start-ups to regional and national businesses and non profits,
-        PivotPoint helps you focus on what’s important – your story, your people,
-        your business. Our work is to help you discover and own your story, build
-        passionate corporate culture and position your business advantageously to
-        current and future stakeholders.
-      </p>
+      <div className="copy-text">
+        <p>
+          Partnerships, Capabilities and References
+          <br/><br/>
+          Our business is your business.
+          <br/>
+          PivotPoint was formed in 2001 with a simple, yet effective, philosophy:
+          relationships with clients are built over time on a foundation of trust.
+          By first focussing on what our clients need and when they need it, we
+          implement a very tailored, fast moving, and, we think, enjoyable approach.
+          The majority of our clients have worked with us, as they have evolved,
+          for an average of five years or longer.
+          <br/>
+          From start-ups to regional and national businesses and non profits,
+          PivotPoint helps you focus on what’s important – your story, your people,
+          your business. Our work is to help you discover and own your story, build
+          passionate corporate culture and position your business advantageously to
+          current and future stakeholders.
+        </p>
+      </div>
     </div>
 
     <div class="hero-image"></div>
