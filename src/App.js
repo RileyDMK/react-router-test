@@ -45,6 +45,8 @@ const Main = () => (
       <Route path='/integrity' component={Integrity}/>
       <Route path='/integration' component={Integration}/>
       <Route path='/about' component={AboutUs}/>
+      <Route path='/portfolio' component={Portfolio}/>
+      <Route path='/services' component={Services}/>
     </Switch>
   </main>
 )
@@ -57,10 +59,20 @@ const Home = () => (
       <Integrity />
       <Integration />
       <img src={require("./images/pivotpointlogo_1500.png")} alt="Pivot Point Logo" id="logo" />
+      <div id="back-1"><BackBtn/></div>
     </div>
     <div class="hero-image">
 
     </div>
+  </div>
+)
+
+const BackBtn = () => (
+  <div className="back-btn">
+    <h2>Back</h2>
+    <svg width="300" height="110">
+      <rect width="300" height="110"/>
+    </svg>
   </div>
 )
 
@@ -83,24 +95,32 @@ const Home = () => (
 //   }
 // }
 
+const Temp = () => (
+  <div className="nav-hole" id="temp">
+
+  </div>
+)
+
 const Insight = () => (
   <div id="insight" className="nav-hole">
-    <h1 id="insight-heading">Insight</h1>
-    {/* <div>
-      <Integrity />
-      <Integration />
-    </div> */}
+    <h2 id="insight-heading">Tell<br/>Your<br/>Story</h2>
+    <div id="back-2"><BackBtn/></div>
+    <div><Temp /></div>
+
+
   </div>
 )
 const Integrity = () => (
   <div id="integrity" className="nav-hole">
-    <h1 id="integrity-heading">Integrity</h1>
+    <h2 id="integrity-heading">Develop<br/>Your<br/>Team</h2>
+    <div><Temp /></div>
   </div>
 )
 
 const Integration = () => (
   <div id="integration" className="nav-hole">
-    <h1 id="integration-heading">Integration</h1>
+    <h2 id="integration-heading">Commit<br/>To Your<br/>Tribe</h2>
+    <div><Temp /></div>
   </div>
 )
 
@@ -130,7 +150,43 @@ const AboutUs = () => (
       </div>
     </div>
 
-    <div class="hero-image"></div>
+    <div className="hero-image"></div>
+  </div>
+)
+
+const Portfolio = () => (
+  <div className="portfolio">
+    <div className="portfolio-item">1</div>
+    <div className="portfolio-item">2</div>
+    <div className="portfolio-item">3</div>
+    <div className="portfolio-item">4</div>
+    <div className="portfolio-item">5</div>
+    <div className="portfolio-item">6</div>
+    <div className="portfolio-item">7</div>
+    <div className="portfolio-item">8</div>
+    <div className="portfolio-item">9</div>
+  </div>
+)
+
+const Services = () => (
+  <div>
+    <div className="copy">
+      <img src={require("./images/construction_1000_30.jpg")} alt="Construction image" id="construction-img" />
+      <div className="copy-text">
+        <ul>
+          <li>Communications Audits</li>
+          <li>Mission and Vision Planning</li>
+          <li>Leadership Training and Coaching</li>
+          <li>Facilitation</li>
+          <li>Communications training</li>
+          <li>Individual image and action coaching</li>
+          <li>Corporate Culture Development</li>
+          <li>Integrated Communications</li>
+          <li>Marketing Consulting</li>
+        </ul>
+      </div>
+    </div>
+    <div className="hero-image"></div>
   </div>
 )
 
@@ -146,13 +202,13 @@ const Navbar = () => (
           <Link to='/' className="nav-link">Process<span className="sr-only">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <Link to='/about' className="nav-link">Insight<span className="sr-only">(current)</span></Link>
+          <Link to='/about' className="nav-link">About Us<span className="sr-only">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Portfolio<span className="sr-only">(current)</span></a>
+          <Link to="/portfolio" className="nav-link">Portfolio<span className="sr-only">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About<span className="sr-only">(current)</span></a>
+          <Link to="/services" className="nav-link">Services<span className="sr-only">(current)</span></Link>
         </li>
       </ul>
     </div>

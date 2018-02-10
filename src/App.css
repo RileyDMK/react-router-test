@@ -10,7 +10,7 @@
   margin-right: 30%; }
 
 .copy-text {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 30px;
   margin-top: 10px;
   margin-botton: 10px; }
@@ -22,10 +22,28 @@
   margin-left: auto;
   margin-right: auto; }
 
+.portfolio {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1px;
+  background-color: #2196F3;
+  height: calc(100vh - 45px); }
+
+.portfolio-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 70px; }
+
+#construction-img {
+  position: relative;
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* The hero image */
 .hero-image {
   /* The image used */
-  background-image: url("images/maincups_5020_40.jpg");
+  background-image: url("images/courtyard1.jpg");
   /* Set a specific height */
   width: 100%;
   height: calc(100vh);
@@ -34,7 +52,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  filter: grayscale(0.1);
+  filter: brightness(0.9);
   z-index: -1; }
 
 .nav-hole {
@@ -47,7 +65,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  z-index: 1; }
+
+.back-btn {
+  position: absolute;
+  z-index: 1; }
+
+.back-btn h2 {
+  position: absolute; }
+
+#back-1 rect {
+  fill: #0000c8; }
+
+#back-2 {
+  position: absolute;
+  left: 10%;
   z-index: 2; }
+  #back-2 rect {
+    fill: green; }
+
+#temp {
+  background-image: url("images/placeholder.jpg");
+  -webkit-clip-path: circle(7% at 50% 25%);
+  clip-path: circle(7% at 50% 25%); }
 
 #insight {
   background-image: url("images/hike_2880_20.jpg");
@@ -57,7 +97,7 @@
 #insight-heading {
   color: white;
   position: absolute;
-  top: 22%;
+  top: 18%;
   left: 6%; }
 
 #integrity {
@@ -68,8 +108,8 @@
 #integrity-heading {
   color: white;
   position: absolute;
-  top: 47%;
-  left: 5%; }
+  top: 43%;
+  left: 6%; }
 
 #integration {
   background-image: url("images/Integration_3091.jpg");
@@ -79,13 +119,15 @@
 #integration-heading {
   color: white;
   position: absolute;
-  top: 72%;
-  left: 5%;
+  top: 69%;
+  left: 6%;
   font-size: 2em; }
 
-#insight:hover, #integrity:hover, #integration:hover {
+#insight:hover, #integrity:hover, #integration:hover, #temp:hover {
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%); }
+  #insight:hover #back-1, #integrity:hover #back-1, #integration:hover #back-1, #temp:hover #back-1 {
+    z-index: 0; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #integration {
@@ -109,9 +151,9 @@
 #logo {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 10%);
   height: calc(40vh);
-  z-index: 1; }
+  z-index: 0; }
 
 @media only screen and (min-width: 900px) {
   #logo {
