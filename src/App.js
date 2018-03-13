@@ -134,7 +134,7 @@ const Integration = () => (
 const AboutUs = () => (
   <div>
     <div className="copy">
-      <img src={require("./images/pivotpointlogo_1500.png")} alt="Pivot Point Logo" id="about-logo" />
+      <img src={require("./images/PivotPoint-Logo-outline.png")} alt="Pivot Point Logo" id="about-logo" />
       <div className="copy-text">
         <p>
           Partnerships, Capabilities and References
@@ -163,27 +163,16 @@ const AboutUs = () => (
 
 const Portfolio = () => (
   <div>
-    <h1>Hello</h1>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/><br/>
-    <br/>
-    <br/>
     <div className="portfolio">
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
-      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/construction_2000_20.jpg")} /></div>
     </div>
   </div>
 )
@@ -191,7 +180,8 @@ const Portfolio = () => (
 const Services = () => (
   <div>
     <div className="copy">
-      <img src={require("./images/construction_1000_30.jpg")} alt="Construction image" id="construction-img" />
+      {/* <div id="construction-img"></div> */}
+      <img src={require("./images/PivotPoint-Logo-outline.png")} alt="Construction image" id="construction-img" />
       <div className="copy-text">
         <ul>
           <li>Communications Audits</li>
