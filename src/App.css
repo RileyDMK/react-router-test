@@ -13,7 +13,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   padding: 30px;
   margin-top: 10px;
-  margin-botton: 10px; }
+  margin-bottom: 10px; }
 
 #about-logo {
   position: relative;
@@ -25,13 +25,15 @@
 .portfolio {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 1px;
+  grid-gap: 5px;
   background-color: #2196F3;
   height: calc(100vh - 45px); }
 
 .portfolio-item {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 70px; }
+  .portfolio-item img {
+    width: 100%; }
 
 #construction-img {
   position: relative;
@@ -64,25 +66,45 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  z-index: 1; }
-
-.back-btn {
-  position: absolute;
-  z-index: 1; }
-
-.back-btn h2 {
   position: absolute; }
 
-#back-1 rect {
-  fill: #0000c8; }
+#back-1 {
+  position: absolute;
+  top: -10%;
+  left: 5%; }
+  #back-1 circle {
+    fill: #6600cc; }
+  #back-1 h2 {
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 15%; }
 
 #back-2 {
   position: absolute;
-  left: 10%;
-  z-index: 2; }
-  #back-2 rect {
-    fill: green; }
+  top: -10%;
+  left: 20%; }
+  #back-2 circle {
+    fill: #6600cc; }
+  #back-2 h2 {
+    position: absolute;
+    font-size: 1.7em;
+    color: white;
+    top: 40%;
+    left: 9%; }
+
+#back-3 {
+  position: absolute;
+  top: -10%;
+  left: 35%; }
+  #back-3 circle {
+    fill: #6600cc; }
+  #back-3 h2 {
+    position: absolute;
+    font-size: 1.5em;
+    color: white;
+    top: 40%;
+    left: 5%; }
 
 #temp {
   background-image: url("images/placeholder.jpg");
@@ -123,11 +145,13 @@
   left: 6%;
   font-size: 2em; }
 
-#insight:hover, #integrity:hover, #integration:hover, #temp:hover {
+#insight:hover, #integrity:hover, #integration:hover {
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%); }
-  #insight:hover #back-1, #integrity:hover #back-1, #integration:hover #back-1, #temp:hover #back-1 {
-    z-index: 0; }
+
+#temp:hover {
+  -webkit-clip-path: circle(100%);
+  clip-path: circle(100%); }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #integration {
@@ -152,8 +176,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 10%);
-  height: calc(40vh);
-  z-index: 0; }
+  height: calc(40vh); }
 
 @media only screen and (min-width: 900px) {
   #logo {

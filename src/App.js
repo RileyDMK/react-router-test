@@ -55,23 +55,24 @@ const Home = () => (
   <div>
 
     <div className="main-page">
+      <img src={require("./images/pivotpointlogo_1500.png")} alt="Pivot Point Logo" id="logo" />
+
       <Insight />
       <Integrity />
       <Integration />
-      <img src={require("./images/pivotpointlogo_1500.png")} alt="Pivot Point Logo" id="logo" />
-      <div id="back-1"><BackBtn/></div>
+      <div id="back-1">
+        <BackBtn/>
+        <h2>HOME</h2>
+      </div>
     </div>
-    <div class="hero-image">
-
-    </div>
+    <div className="hero-image"></div>
   </div>
 )
 
 const BackBtn = () => (
   <div className="back-btn">
-    <h2>Back</h2>
-    <svg width="300" height="110">
-      <rect width="300" height="110"/>
+    <svg width="200" height="200">
+      <circle cx="80" cy="80" r="80"/>
     </svg>
   </div>
 )
@@ -97,16 +98,22 @@ const BackBtn = () => (
 
 const Temp = () => (
   <div className="nav-hole" id="temp">
-
+    <div id="back-3">
+      <BackBtn/>
+      <h2>CONTINUED</h2>
+    </div>
   </div>
 )
 
 const Insight = () => (
   <div id="insight" className="nav-hole">
     <h2 id="insight-heading">Tell<br/>Your<br/>Story</h2>
-    <div id="back-2"><BackBtn/></div>
-    <div><Temp /></div>
 
+    <div><Temp /></div>
+    <div id="back-2">
+      <BackBtn/>
+      <h2>JOURNEY</h2>
+    </div>
 
   </div>
 )
@@ -155,16 +162,29 @@ const AboutUs = () => (
 )
 
 const Portfolio = () => (
-  <div className="portfolio">
-    <div className="portfolio-item">1</div>
-    <div className="portfolio-item">2</div>
-    <div className="portfolio-item">3</div>
-    <div className="portfolio-item">4</div>
-    <div className="portfolio-item">5</div>
-    <div className="portfolio-item">6</div>
-    <div className="portfolio-item">7</div>
-    <div className="portfolio-item">8</div>
-    <div className="portfolio-item">9</div>
+  <div>
+    <h1>Hello</h1>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/><br/>
+    <br/>
+    <br/>
+    <div className="portfolio">
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+      <div className="portfolio-item"><img src={require("./images/portfolio1.jpg")} /></div>
+    </div>
   </div>
 )
 

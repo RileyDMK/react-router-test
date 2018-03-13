@@ -12,8 +12,9 @@
   background-color:rgba(255,255,255,0.7);
   padding: 30px;
   margin-top: 10px;
-  margin-botton: 10px;
+  margin-bottom: 10px;
 }
+
 #about-logo{
   position: relative;
   display:block;
@@ -24,13 +25,17 @@
 .portfolio{
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 1px;
+  grid-gap: 5px;
   background-color: #2196F3;
   height: calc(100vh - 45px);
 }
 .portfolio-item{
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 70px;
+  img{
+    width:100%;
+    //height:100%;
+  }
 }
 #construction-img{
   position: relative;
@@ -57,7 +62,9 @@
     filter: brightness(0.9);
     z-index: -1;
 }
-
+.main-page{
+  //position: absolute;
+}
 
 .nav-hole{
   /* The image used */
@@ -69,7 +76,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  z-index:1;
+  //z-index:1;
   @extend %swiss-cheese;
 }
 
@@ -77,32 +84,58 @@
 
 }
 
-.back-btn {
-  position: absolute;
-  z-index: 1;
-}
-.back-btn {
-  h2 {
-    position: absolute;
-  }
-}
+
 #back-1{
-  //z-index: 2;
-  rect{
-    fill: rgb(0,0,200);
+  //z-index: 3;
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  circle{
+    fill: #6600cc;
+  }
+  //text-align: center;
+  //z-index: 1;
+  h2{
+    position:absolute;
+    color: white;
+    top: 40%;
+    left: 15%;
   }
 }
 #back-2{
   position: absolute;
-  left: 10%;
-  rect{fill:green;}
-  z-index: 2
+  top: -10%;
+  left: 20%;
+  circle{fill:#6600cc;}
+  //z-index: 2
+  h2{
+    position:absolute;
+    font-size: 1.7em;
+    color: white;
+    top: 40%;
+    left: 9%;
+  }
 }
+#back-3{
+  position: absolute;
+  top: -10%;
+  left: 35%;
+  circle{fill:#6600cc;}
+  //z-index: 2
+  h2{
+    position:absolute;
+    font-size: 1.5em;
+    color: white;
+    top: 40%;
+    left: 5%;
+  }
+}
+
 #temp{
   background-image: url("images/placeholder.jpg");
   -webkit-clip-path: circle(7% at 50% 25%);
   clip-path: circle(7% at 50% 25%);
-  //z-index: 2;
+  //z-index: 1;
 }
 #insight{
   background-image: url("images/hike_2880_20.jpg");
@@ -138,11 +171,17 @@
   left:6%;
   font-size:2em;
 }
-#insight:hover, #integrity:hover, #integration:hover, #temp:hover{
+#insight:hover, #integrity:hover, #integration:hover{
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
   //z-index:1;
-  #back-1{z-index:0;}
+  //#back-1{visibility: visible;}
+}
+
+#temp:hover{
+  -webkit-clip-path: circle(100%);
+  clip-path: circle(100%);
+  //#back-1{visibility:hidden;}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
@@ -174,7 +213,7 @@ only screen and (min-device-pixel-ratio: 3) {
   left: 50%;
   transform: translate(-50%, 10%);
   height:calc(40vh);
-  z-index: 0;
+  //z-index: 0;
 }
 @media only screen and (min-width:900px){
   #logo {height:50vh}
