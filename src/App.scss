@@ -3,6 +3,200 @@
   transition: -webkit-clip-path 1s ease-out; /* needs to be prefixed otherwise it's not transitioned in Chrome */
   /* transition: clip-path .6s ease-out; */
 }
+
+
+@media only screen and (max-width : 799px) {
+  #back-1{
+    position: absolute;
+    width:90px;
+    height:90px;
+    top: -8%;
+    left: 0%;
+    circle{
+      fill: #6600cc;
+    }
+    h2{
+      position:absolute;
+      font-size: 1em;
+      color: white;
+      top: 60%;
+      left: 15%;
+    }
+    svg{width:90px;height:90px;}
+    circle{
+      cx:45;
+      cy:45;
+      r:45;
+    }
+    .back-btn{
+      height:90px;
+    }
+  }
+  #back-2{
+    position: absolute;
+    width:90px;
+    height:90px;
+    top: -8%;
+    left: 23%;
+    circle{fill:#6600cc;}
+    h2{
+      position:absolute;
+      font-size: 1em;
+      color: white;
+      top: 60%;
+      left: 9%;
+    }
+    svg{width:90px;height:90px;}
+    circle{
+      cx:45;
+      cy:45;
+      r:45;
+    }
+    .back-btn{
+      height:90px;
+    }
+  }
+  #back-3{
+    position: absolute;
+    width:90px;
+    height:90px;
+    top: -8%;
+    left: 46%;
+    circle{fill:#6600cc;}
+    h2{
+      position:absolute;
+      font-size: 1em;
+      color: white;
+      top: 60%;
+      left: 5%;
+    }
+    svg{width:90px;height:90px;}
+    circle{
+      cx:45;
+      cy:45;
+      r:45;
+    }
+    .back-btn{
+      height:90px;
+    }
+  }
+  // #back-1{
+  //   position: absolute;
+  //   width:130px;
+  //   height: 130px;
+  //   top: -10%;
+  //   left: 5%;
+  //   circle{
+  //     fill: #000;
+  //   }
+  //   h2{
+  //     position:absolute;
+  //     font-size: 1.7em;
+  //     color: white;
+  //     top: 60%;
+  //     left: 15%;
+  //   }
+  //   svg{
+  //     // width:62%;
+  //     // height:70%;
+  //     circle{
+  //       cx:62;
+  //       cy:62;
+  //       r:62;
+  //     }
+  //   }
+  // }
+  // #back-2{
+  //   position: absolute;
+  //   width:130px;
+  //   height: 130px;
+  //   top: -10%;
+  //   left: 40%;
+  //   circle{fill:#000;}
+  //   h2{
+  //     position:absolute;
+  //     font-size: 1.7em;
+  //     color: white;
+  //     top: 60%;
+  //     left: 9%;
+  //   }
+  //   svg{
+  //     // width:62%;
+  //     // height:70%;
+  //     circle{
+  //       cx:62;
+  //       cy:62;
+  //       r:62;
+  //     }
+  //   }
+  // }
+  // #back-3{
+  //   position: absolute;
+  //   top: -10%;
+  //   left: 75%;
+  //   width:130px;
+  //   height: 130px;
+  //   circle{fill:#000;}
+  //   h2{
+  //     position:absolute;
+  //     font-size: 1.5em;
+  //     color: white;
+  //     top: 60%;
+  //     left: 5%;
+  //   }
+  //   svg{
+  //     // width:62%;
+  //     // height:70%;
+  //     circle{
+  //       cx:62;
+  //       cy:62;
+  //       r:62;
+  //     }
+  //   }
+  // }
+}
+@media only screen  and (min-width : 800px) {
+  #back-1{
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    circle{
+      fill: #6600cc;
+    }
+    h2{
+      position:absolute;
+      color: white;
+      top: 40%;
+      left: 15%;
+    }
+  }
+  #back-2{
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    circle{fill:#6600cc;}
+    h2{
+      position:absolute;
+      font-size: 1.7em;
+      color: white;
+      top: 40%;
+      left: 9%;
+    }
+  }
+  #back-3{
+    position: absolute;
+    top: -10%;
+    left: 35%;
+    circle{fill:#6600cc;}
+    h2{
+      position:absolute;
+      font-size: 1.5em;
+      color: white;
+      top: 40%;
+      left: 5%;
+    }
+  }
+}
 .copy{
   position:absolute;
   margin-left: 30%;
@@ -58,12 +252,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    //opacity: 0.5;
     filter: brightness(0.9);
     z-index: -1;
-}
-.main-page{
-  //position: absolute;
 }
 
 .nav-hole{
@@ -76,66 +266,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  //z-index:1;
   @extend %swiss-cheese;
 }
 
-.nav-hole > h2 {
-
-}
-
-
-#back-1{
-  //z-index: 3;
-  position: absolute;
-  top: -10%;
-  left: 5%;
-  circle{
-    fill: #6600cc;
-  }
-  //text-align: center;
-  //z-index: 1;
-  h2{
-    position:absolute;
-    color: white;
-    top: 40%;
-    left: 15%;
-  }
-}
-#back-2{
-  position: absolute;
-  top: -10%;
-  left: 20%;
-  circle{fill:#6600cc;}
-  //z-index: 2
-  h2{
-    position:absolute;
-    font-size: 1.7em;
-    color: white;
-    top: 40%;
-    left: 9%;
-  }
-}
-#back-3{
-  position: absolute;
-  top: -10%;
-  left: 35%;
-  circle{fill:#6600cc;}
-  //z-index: 2
-  h2{
-    position:absolute;
-    font-size: 1.5em;
-    color: white;
-    top: 40%;
-    left: 5%;
-  }
-}
 
 #temp{
   background-image: url("images/placeholder.jpg");
   -webkit-clip-path: circle(7% at 50% 25%);
   clip-path: circle(7% at 50% 25%);
-  //z-index: 1;
 }
 #insight{
   background-image: url("images/hike_2880_20.jpg");
@@ -174,14 +312,11 @@
 #insight:hover, #integrity:hover, #integration:hover{
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
-  //z-index:1;
-  //#back-1{visibility: visible;}
 }
 
 #temp:hover{
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
-  //#back-1{visibility:hidden;}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
@@ -205,30 +340,19 @@ only screen and (min-device-pixel-ratio: 3) {
   position: absolute;
 }
 #logo{
-  // display: block;
   position: absolute;
-  // margin-left: auto;
-  // margin-right: auto;
-  // top:-15%;
   left: 50%;
   transform: translate(-50%, 10%);
   height:calc(40vh);
-  //z-index: 0;
 }
 @media only screen and (min-width:900px){
   #logo {height:50vh}
 }
-//
-//
-//
-//
-//
-//
-//
+
 .navbar{
   background-color: #6600cc;
 }
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
     .navbar-nav {
         margin: 0 auto;
         display: table;

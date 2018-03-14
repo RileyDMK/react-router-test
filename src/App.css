@@ -4,6 +4,114 @@
   /* needs to be prefixed otherwise it's not transitioned in Chrome */
   /* transition: clip-path .6s ease-out; */ }
 
+@media only screen and (max-width: 799px) {
+  #back-1 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: -8%;
+    left: 0%; }
+    #back-1 circle {
+      fill: #6600cc; }
+    #back-1 h2 {
+      position: absolute;
+      font-size: 1em;
+      color: white;
+      top: 60%;
+      left: 15%; }
+    #back-1 svg {
+      width: 90px;
+      height: 90px; }
+    #back-1 circle {
+      cx: 45;
+      cy: 45;
+      r: 45; }
+    #back-1 .back-btn {
+      height: 90px; }
+  #back-2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: -8%;
+    left: 23%; }
+    #back-2 circle {
+      fill: #6600cc; }
+    #back-2 h2 {
+      position: absolute;
+      font-size: 1em;
+      color: white;
+      top: 60%;
+      left: 9%; }
+    #back-2 svg {
+      width: 90px;
+      height: 90px; }
+    #back-2 circle {
+      cx: 45;
+      cy: 45;
+      r: 45; }
+    #back-2 .back-btn {
+      height: 90px; }
+  #back-3 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: -8%;
+    left: 46%; }
+    #back-3 circle {
+      fill: #6600cc; }
+    #back-3 h2 {
+      position: absolute;
+      font-size: 1em;
+      color: white;
+      top: 60%;
+      left: 5%; }
+    #back-3 svg {
+      width: 90px;
+      height: 90px; }
+    #back-3 circle {
+      cx: 45;
+      cy: 45;
+      r: 45; }
+    #back-3 .back-btn {
+      height: 90px; } }
+
+@media only screen and (min-width: 800px) {
+  #back-1 {
+    position: absolute;
+    top: -10%;
+    left: 5%; }
+    #back-1 circle {
+      fill: #6600cc; }
+    #back-1 h2 {
+      position: absolute;
+      color: white;
+      top: 40%;
+      left: 15%; }
+  #back-2 {
+    position: absolute;
+    top: -10%;
+    left: 20%; }
+    #back-2 circle {
+      fill: #6600cc; }
+    #back-2 h2 {
+      position: absolute;
+      font-size: 1.7em;
+      color: white;
+      top: 40%;
+      left: 9%; }
+  #back-3 {
+    position: absolute;
+    top: -10%;
+    left: 35%; }
+    #back-3 circle {
+      fill: #6600cc; }
+    #back-3 h2 {
+      position: absolute;
+      font-size: 1.5em;
+      color: white;
+      top: 40%;
+      left: 5%; } }
+
 .copy {
   position: absolute;
   margin-left: 30%;
@@ -67,44 +175,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute; }
-
-#back-1 {
-  position: absolute;
-  top: -10%;
-  left: 5%; }
-  #back-1 circle {
-    fill: #6600cc; }
-  #back-1 h2 {
-    position: absolute;
-    color: white;
-    top: 40%;
-    left: 15%; }
-
-#back-2 {
-  position: absolute;
-  top: -10%;
-  left: 20%; }
-  #back-2 circle {
-    fill: #6600cc; }
-  #back-2 h2 {
-    position: absolute;
-    font-size: 1.7em;
-    color: white;
-    top: 40%;
-    left: 9%; }
-
-#back-3 {
-  position: absolute;
-  top: -10%;
-  left: 35%; }
-  #back-3 circle {
-    fill: #6600cc; }
-  #back-3 h2 {
-    position: absolute;
-    font-size: 1.5em;
-    color: white;
-    top: 40%;
-    left: 5%; }
 
 #temp {
   background-image: url("images/placeholder.jpg");
@@ -185,7 +255,7 @@
 .navbar {
   background-color: #6600cc; }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .navbar-nav {
     margin: 0 auto;
     display: table;

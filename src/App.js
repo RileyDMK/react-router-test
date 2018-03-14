@@ -109,7 +109,7 @@ const Insight = () => (
   <div id="insight" className="nav-hole">
     <h2 id="insight-heading">Tell<br/>Your<br/>Story</h2>
 
-    <div><Temp /></div>
+    <Temp />
     <div id="back-2">
       <BackBtn/>
       <h2>JOURNEY</h2>
