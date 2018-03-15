@@ -4,113 +4,226 @@
   /* needs to be prefixed otherwise it's not transitioned in Chrome */
   /* transition: clip-path .6s ease-out; */ }
 
+.shadow {
+  /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+  -webkit-filter: drop-shadow(3px 3px 8px black);
+  filter: drop-shadow(3px 3px 8px black); }
+
+@font-face {
+  font-family: palanquin-light;
+  src: url("fonts/palanquin/Palanquin-Light.ttf"); }
+
+body {
+  font-family: palanquin-light,futura, sans-serif; }
+
+.logo1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: calc(60vh); }
+
+.logo2 {
+  display: none; }
+
+#temp {
+  background-image: url("images/placeholder.jpg");
+  -webkit-clip-path: circle(7% at 50% 25%);
+  clip-path: circle(7% at 50% 25%); }
+
+#insight {
+  background-image: url("images/hike_2880_20.jpg");
+  -webkit-clip-path: circle(7% at 10% 25%);
+  clip-path: circle(7% at 10% 25%); }
+
+#insight-heading {
+  color: white;
+  position: absolute;
+  top: 18%;
+  left: 6%;
+  text-shadow: 2px 2px black; }
+
+#integrity {
+  background-image: url("images/levelingup_2880_20.jpg");
+  -webkit-clip-path: circle(7% at 10% 50%);
+  clip-path: circle(7% at 10% 50%); }
+
+#integrity-heading {
+  color: white;
+  position: absolute;
+  top: 43%;
+  left: 6%;
+  text-shadow: 2px 2px black; }
+
+#integration {
+  background-image: url("images/Integration_3091.jpg");
+  -webkit-clip-path: circle(7% at 10% 75%);
+  clip-path: circle(7% at 10% 75%); }
+
+#integration-heading {
+  color: white;
+  position: absolute;
+  top: 69%;
+  left: 6%;
+  font-size: 2em;
+  text-shadow: 2px 2px black; }
+
+#insight:hover, #integrity:hover, #integration:hover, #temp:hover {
+  -webkit-clip-path: circle(100%);
+  clip-path: circle(100%); }
+
 @media only screen and (max-width: 799px) {
-  #back-1 {
+  .logo1 {
+    display: none; }
+  .logo2 {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-30%, 10%);
+    height: calc(30vh); }
+  #temp {
+    background-image: url("images/placeholder.jpg");
+    -webkit-clip-path: circle(10% at 50% 25%);
+    clip-path: circle(10% at 50% 25%); }
+  #insight {
+    background-image: url("images/hike_2880_20.jpg");
+    -webkit-clip-path: circle(10% at 15% 25%);
+    clip-path: circle(10% at 15% 25%); }
+  #insight-heading {
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 6%; }
+  #integrity {
+    background-image: url("images/levelingup_2880_20.jpg");
+    -webkit-clip-path: circle(10% at 15% 50%);
+    clip-path: circle(10% at 15% 50%); }
+  #integrity-heading {
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 6%; }
+  #integration {
+    background-image: url("images/Integration_3091.jpg");
+    -webkit-clip-path: circle(10% at 15% 75%);
+    clip-path: circle(10% at 15% 75%); }
+  #integration-heading {
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 6%; }
+  .back-1 {
     position: absolute;
     width: 90px;
     height: 90px;
-    top: -8%;
+    top: -35px;
     left: 0%; }
-    #back-1 circle {
+    .back-1 circle {
       fill: #6600cc; }
-    #back-1 h2 {
+    .back-1 h2 {
       position: absolute;
       font-size: 1em;
       color: white;
-      top: 60%;
-      left: 15%; }
-    #back-1 svg {
+      top: 40px;
+      left: 23%; }
+    .back-1 svg {
       width: 90px;
       height: 90px; }
-    #back-1 circle {
+    .back-1 circle {
       cx: 45;
       cy: 45;
       r: 45; }
-    #back-1 .back-btn {
+    .back-1 .back-btn {
       height: 90px; }
-  #back-2 {
+  .back-2 {
     position: absolute;
     width: 90px;
     height: 90px;
-    top: -8%;
+    top: -35px;
     left: 23%; }
-    #back-2 circle {
+    .back-2 circle {
       fill: #6600cc; }
-    #back-2 h2 {
+    .back-2 h2 {
       position: absolute;
       font-size: 1em;
       color: white;
-      top: 60%;
-      left: 9%; }
-    #back-2 svg {
+      top: 40px;
+      left: 30%; }
+    .back-2 svg {
       width: 90px;
       height: 90px; }
-    #back-2 circle {
+    .back-2 circle {
       cx: 45;
       cy: 45;
       r: 45; }
-    #back-2 .back-btn {
+    .back-2 .back-btn {
       height: 90px; }
-  #back-3 {
+  .back-3 {
     position: absolute;
     width: 90px;
     height: 90px;
-    top: -8%;
+    top: -35px;
     left: 46%; }
-    #back-3 circle {
+    .back-3 circle {
       fill: #6600cc; }
-    #back-3 h2 {
+    .back-3 h2 {
       position: absolute;
       font-size: 1em;
       color: white;
-      top: 60%;
-      left: 5%; }
-    #back-3 svg {
+      top: 40px;
+      left: 30%; }
+    .back-3 svg {
       width: 90px;
       height: 90px; }
-    #back-3 circle {
+    .back-3 circle {
       cx: 45;
       cy: 45;
       r: 45; }
-    #back-3 .back-btn {
+    .back-3 .back-btn {
       height: 90px; } }
 
 @media only screen and (min-width: 800px) {
-  #back-1 {
+  .back-1 {
     position: absolute;
+    width: 165px;
+    height: 165px;
     top: -10%;
     left: 5%; }
-    #back-1 circle {
+    .back-1 circle {
       fill: #6600cc; }
-    #back-1 h2 {
+    .back-1 h2 {
       position: absolute;
       color: white;
-      top: 40%;
-      left: 15%; }
-  #back-2 {
+      top: 55%;
+      left: 20%; }
+  .back-2 {
     position: absolute;
+    width: 165px;
+    height: 165px;
     top: -10%;
     left: 20%; }
-    #back-2 circle {
+    .back-2 circle {
       fill: #6600cc; }
-    #back-2 h2 {
+    .back-2 h2 {
       position: absolute;
-      font-size: 1.7em;
       color: white;
-      top: 40%;
-      left: 9%; }
-  #back-3 {
+      top: 55%;
+      left: 25%; }
+  .back-3 {
     position: absolute;
+    width: 165px;
+    height: 165px;
     top: -10%;
     left: 35%; }
-    #back-3 circle {
+    .back-3 circle {
       fill: #6600cc; }
-    #back-3 h2 {
+    .back-3 h2 {
       position: absolute;
-      font-size: 1.5em;
       color: white;
-      top: 40%;
-      left: 5%; } }
+      top: 55%;
+      left: 25%; } }
 
 .copy {
   position: absolute;
@@ -176,53 +289,6 @@
   background-size: cover;
   position: absolute; }
 
-#temp {
-  background-image: url("images/placeholder.jpg");
-  -webkit-clip-path: circle(7% at 50% 25%);
-  clip-path: circle(7% at 50% 25%); }
-
-#insight {
-  background-image: url("images/hike_2880_20.jpg");
-  -webkit-clip-path: circle(7% at 10% 25%);
-  clip-path: circle(7% at 10% 25%); }
-
-#insight-heading {
-  color: white;
-  position: absolute;
-  top: 18%;
-  left: 6%; }
-
-#integrity {
-  background-image: url("images/levelingup_2880_20.jpg");
-  -webkit-clip-path: circle(7% at 10% 50%);
-  clip-path: circle(7% at 10% 50%); }
-
-#integrity-heading {
-  color: white;
-  position: absolute;
-  top: 43%;
-  left: 6%; }
-
-#integration {
-  background-image: url("images/Integration_3091.jpg");
-  -webkit-clip-path: circle(7% at 10% 75%);
-  clip-path: circle(7% at 10% 75%); }
-
-#integration-heading {
-  color: white;
-  position: absolute;
-  top: 69%;
-  left: 6%;
-  font-size: 2em; }
-
-#insight:hover, #integrity:hover, #integration:hover {
-  -webkit-clip-path: circle(100%);
-  clip-path: circle(100%); }
-
-#temp:hover {
-  -webkit-clip-path: circle(100%);
-  clip-path: circle(100%); }
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #integration {
     background-image: url("images/Integration_1440.jpg"); } }
@@ -241,16 +307,6 @@
 
 .heading {
   position: absolute; }
-
-#logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 10%);
-  height: calc(40vh); }
-
-@media only screen and (min-width: 900px) {
-  #logo {
-    height: 50vh; } }
 
 .navbar {
   background-color: #6600cc; }

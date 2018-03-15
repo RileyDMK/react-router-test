@@ -55,12 +55,13 @@ const Home = () => (
   <div>
 
     <div className="main-page">
-      <img src={require("./images/pivotpointlogo_1500.png")} alt="Pivot Point Logo" id="logo" />
+      <img src={require("./images/pivotpointlogo_1500.png")} alt="Pivot Point Logo" className="logo1" />
+      <img src={require("./images/PivotPoint-Logo-outline.png")} alt="Pivot Point Logo" className="logo2" />
 
       <Insight />
       <Integrity />
       <Integration />
-      <div id="back-1">
+      <div className="back-1">
         <BackBtn/>
         <h2>HOME</h2>
       </div>
@@ -71,7 +72,7 @@ const Home = () => (
 
 const BackBtn = () => (
   <div className="back-btn">
-    <svg width="200" height="200">
+    <svg className="shadow" width="200" height="200">
       <circle cx="80" cy="80" r="80"/>
     </svg>
   </div>
@@ -98,36 +99,44 @@ const BackBtn = () => (
 
 const Temp = () => (
   <div className="nav-hole" id="temp">
-    <div id="back-3">
+    <div className="back-3">
       <BackBtn/>
-      <h2>CONTINUED</h2>
+      <h2>TWO</h2>
     </div>
   </div>
 )
 
 const Insight = () => (
   <div id="insight" className="nav-hole">
-    <h2 id="insight-heading">Tell<br/>Your<br/>Story</h2>
+    <h2 id="insight-heading">Your<br/>Story</h2>
 
     <Temp />
-    <div id="back-2">
+    <div className="back-2">
       <BackBtn/>
-      <h2>JOURNEY</h2>
+      <h2>ONE</h2>
     </div>
 
   </div>
 )
 const Integrity = () => (
   <div id="integrity" className="nav-hole">
-    <h2 id="integrity-heading">Develop<br/>Your<br/>Team</h2>
+    <h2 id="integrity-heading">Your<br/>Team</h2>
     <div><Temp /></div>
+    <div className="back-2">
+      <BackBtn/>
+      <h2>ONE</h2>
+    </div>
   </div>
 )
 
 const Integration = () => (
   <div id="integration" className="nav-hole">
-    <h2 id="integration-heading">Commit<br/>To Your<br/>Tribe</h2>
+    <h2 id="integration-heading">Your<br/>Tribe</h2>
     <div><Temp /></div>
+    <div className="back-2">
+      <BackBtn/>
+      <h2>ONE</h2>
+    </div>
   </div>
 )
 
@@ -201,7 +210,7 @@ const Services = () => (
 )
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg fixed-bottom navbar-dark bg-*">
+  <nav className="navbar navbar-expand-lg fixed-bottom navbar-dark bg-* shadow">
     {/* <a className="navbar-brand" href="#">Riley Mathis</a> */}
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
