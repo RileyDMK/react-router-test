@@ -39,17 +39,22 @@ body{
   left:61%;
   text-shadow: 2px 2px black;
 }
-#review{
+#discovery2{
   background-image: url("images/levelingup_2880_20.jpg");
   -webkit-clip-path: circle(7% at 66% 25%);
   clip-path: circle(7% at 66% 25%);
 }
-#review-heading{
+#discovery2-heading{
   color:white;
   position:absolute;
   top:57%;
   left:45%;
   text-shadow: 2px 2px black;
+}
+#discovery3{
+  background-image: url("images/Integration_2880.jpg");
+  -webkit-clip-path: circle(7% at 66% 25%);
+  clip-path: circle(7% at 66% 25%);
 }
 #insight{
   background-image: url("images/hike_2880_20_green.jpg");
@@ -77,7 +82,7 @@ body{
   text-shadow: 2px 2px black;
 }
 #integration{
-  background-image: url("images/Integration_3091.jpg");
+  background-image: url("images/Integration_2880_10_gold.jpg");
   -webkit-clip-path: circle(7% at 10% 75%);
   clip-path: circle(7% at 10% 75%);
 }
@@ -91,7 +96,7 @@ body{
 }
 #insight:hover, #integrity:hover,
 #integration:hover, #discovery:hover,
-#review:hover{
+#discovery2:hover, #discovery3:hover{
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
 }
@@ -419,15 +424,15 @@ body{
 
 
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2) {
-    #integration { background-image: url('images/Integration_1440.jpg'); }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3),
-only screen and (min-device-pixel-ratio: 3) {
-    #integration { background-image: url('images/Integration_2880.jpg'); }
-}
+// @media only screen and (-webkit-min-device-pixel-ratio: 2),
+// only screen and (min-device-pixel-ratio: 2) {
+//     #integration { background-image: url('images/Integration_1440.jpg'); }
+// }
+//
+// @media only screen and (-webkit-min-device-pixel-ratio: 3),
+// only screen and (min-device-pixel-ratio: 3) {
+//     #integration { background-image: url('images/Integration_2880.jpg'); }
+// }
 
 /* Place text in the middle of the image */
 .hero-text {

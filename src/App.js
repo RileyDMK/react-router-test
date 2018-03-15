@@ -106,8 +106,8 @@ const Discovery = () => (
     </div>
   </div>
 )
-const Review = () => (
-  <div className="nav-hole" id="review">
+const Discovery2 = () => (
+  <div className="nav-hole" id="discovery2">
     <h2 id="review-heading"></h2>
     <div className="back-3">
       <BackBtn/>
@@ -115,8 +115,8 @@ const Review = () => (
     </div>
   </div>
 )
-const Reconciliation= () => (
-  <div className="nav-hole" id="reconciliation">
+const Discovery3 = () => (
+  <div className="nav-hole" id="discovery3">
     <div className="back-3">
       <BackBtn/>
       <h2>TWO</h2>
@@ -156,7 +156,7 @@ const Insight = () => (
 const Integrity = () => (
   <div id="integrity" className="nav-hole">
     <h2 id="integrity-heading">Your<br/>Team</h2>
-    <Review/>
+    <Discovery2/>
     <div className="back-2">
       <BackBtn/>
       <h2>ONE</h2>
@@ -167,7 +167,7 @@ const Integrity = () => (
 const Integration = () => (
   <div id="integration" className="nav-hole">
     <h2 id="integration-heading">Your<br/>Tribe</h2>
-    <Discovery/>
+    <Discovery3/>
     <div className="back-2">
       <BackBtn/>
       <h2>ONE</h2>
