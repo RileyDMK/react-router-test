@@ -123,14 +123,14 @@ const Discovery3 = () => (
     </div>
   </div>
 )
-const Narrative = () => (
-  <div className="nav-hole" id="narrative">
-    <div className="back-3">
-      <BackBtn/>
-      <h2>TWO</h2>
-    </div>
-  </div>
-)
+// const Narrative = () => (
+//   <div className="nav-hole" id="narrative">
+//     <div className="back-3">
+//       <BackBtn/>
+//       <h2>TWO</h2>
+//     </div>
+//   </div>
+// )
 // const Discovery = () => (
 //   <div className="nav-hole" id="discovery">
 //     <div className="back-3">
