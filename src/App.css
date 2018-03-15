@@ -25,13 +25,32 @@ body {
 .logo2 {
   display: none; }
 
-#temp {
-  background-image: url("images/placeholder.jpg");
-  -webkit-clip-path: circle(7% at 50% 25%);
-  clip-path: circle(7% at 50% 25%); }
+#discovery {
+  background-image: url("images/hike_2880_20.jpg");
+  -webkit-clip-path: circle(7% at 66% 25%);
+  clip-path: circle(7% at 66% 25%); }
+
+#discovery-heading {
+  color: white;
+  position: absolute;
+  top: 22%;
+  left: 61%;
+  text-shadow: 2px 2px black; }
+
+#review {
+  background-image: url("images/levelingup_2880_20.jpg");
+  -webkit-clip-path: circle(7% at 66% 25%);
+  clip-path: circle(7% at 66% 25%); }
+
+#review-heading {
+  color: white;
+  position: absolute;
+  top: 57%;
+  left: 45%;
+  text-shadow: 2px 2px black; }
 
 #insight {
-  background-image: url("images/hike_2880_20.jpg");
+  background-image: url("images/hike_2880_20_green.jpg");
   -webkit-clip-path: circle(7% at 10% 25%);
   clip-path: circle(7% at 10% 25%); }
 
@@ -43,7 +62,7 @@ body {
   text-shadow: 2px 2px black; }
 
 #integrity {
-  background-image: url("images/levelingup_2880_20.jpg");
+  background-image: url("images/levelingup_2880_10_blue.jpg");
   -webkit-clip-path: circle(7% at 10% 50%);
   clip-path: circle(7% at 10% 50%); }
 
@@ -67,7 +86,9 @@ body {
   font-size: 2em;
   text-shadow: 2px 2px black; }
 
-#insight:hover, #integrity:hover, #integration:hover, #temp:hover {
+#insight:hover, #integrity:hover,
+#integration:hover, #discovery:hover,
+#review:hover {
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%); }
 
@@ -81,11 +102,9 @@ body {
     transform: translate(-30%, 10%);
     height: calc(30vh); }
   #temp {
-    background-image: url("images/placeholder.jpg");
     -webkit-clip-path: circle(10% at 50% 25%);
     clip-path: circle(10% at 50% 25%); }
   #insight {
-    background-image: url("images/hike_2880_20.jpg");
     -webkit-clip-path: circle(10% at 15% 25%);
     clip-path: circle(10% at 15% 25%); }
   #insight-heading {
@@ -95,7 +114,6 @@ body {
     top: 20%;
     left: 6%; }
   #integrity {
-    background-image: url("images/levelingup_2880_20.jpg");
     -webkit-clip-path: circle(10% at 15% 50%);
     clip-path: circle(10% at 15% 50%); }
   #integrity-heading {
@@ -105,7 +123,6 @@ body {
     top: 45%;
     left: 6%; }
   #integration {
-    background-image: url("images/Integration_3091.jpg");
     -webkit-clip-path: circle(10% at 15% 75%);
     clip-path: circle(10% at 15% 75%); }
   #integration-heading {

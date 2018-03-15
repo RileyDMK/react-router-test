@@ -97,20 +97,55 @@ const BackBtn = () => (
 //   }
 // }
 
-const Temp = () => (
-  <div className="nav-hole" id="temp">
+const Discovery = () => (
+  <div className="nav-hole" id="discovery">
+    <h2 id="discovery-heading"></h2>
     <div className="back-3">
       <BackBtn/>
       <h2>TWO</h2>
     </div>
   </div>
 )
+const Review = () => (
+  <div className="nav-hole" id="review">
+    <h2 id="review-heading"></h2>
+    <div className="back-3">
+      <BackBtn/>
+      <h2>TWO</h2>
+    </div>
+  </div>
+)
+const Reconciliation= () => (
+  <div className="nav-hole" id="reconciliation">
+    <div className="back-3">
+      <BackBtn/>
+      <h2>TWO</h2>
+    </div>
+  </div>
+)
+const Narrative = () => (
+  <div className="nav-hole" id="narrative">
+    <div className="back-3">
+      <BackBtn/>
+      <h2>TWO</h2>
+    </div>
+  </div>
+)
+// const Discovery = () => (
+//   <div className="nav-hole" id="discovery">
+//     <div className="back-3">
+//       <BackBtn/>
+//       <h2>TWO</h2>
+//     </div>
+//   </div>
+// )
 
 const Insight = () => (
   <div id="insight" className="nav-hole">
     <h2 id="insight-heading">Your<br/>Story</h2>
 
-    <Temp />
+    <Discovery />
+    {/* <Review /> */}
     <div className="back-2">
       <BackBtn/>
       <h2>ONE</h2>
@@ -121,7 +156,7 @@ const Insight = () => (
 const Integrity = () => (
   <div id="integrity" className="nav-hole">
     <h2 id="integrity-heading">Your<br/>Team</h2>
-    <div><Temp /></div>
+    <Review/>
     <div className="back-2">
       <BackBtn/>
       <h2>ONE</h2>
@@ -132,7 +167,7 @@ const Integrity = () => (
 const Integration = () => (
   <div id="integration" className="nav-hole">
     <h2 id="integration-heading">Your<br/>Tribe</h2>
-    <div><Temp /></div>
+    <Discovery/>
     <div className="back-2">
       <BackBtn/>
       <h2>ONE</h2>
